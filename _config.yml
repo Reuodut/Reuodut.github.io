@@ -1,12 +1,12 @@
 # Basic
-title: 恶魔焦的小兔窝
-subtitle: 个人小窝
-description: 什么都略懂一点~
+title: Reuodut' Blog
+subtitle: Reuodut' Blog
+description: 伪安全爱好者~
 # 头像里面的标题
-avatarTitle: 恶魔焦
+avatarTitle: reuodut
 # 头像里面的描述
 avatarDesc: 网络安全 / 编程开发
-url: "http://www.codersec.net"
+url: "http://reuodut.github.io"
 
 # Comment
 comment:
@@ -16,9 +16,9 @@ comment:
 # Social
 social:
     weibo: no 
-    github: S0uLHun43r
+    github: Reuodut
     # twitter: 
-    mail: root@catchrabbit.cc
+    mail: reuodut@163.com
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
 
