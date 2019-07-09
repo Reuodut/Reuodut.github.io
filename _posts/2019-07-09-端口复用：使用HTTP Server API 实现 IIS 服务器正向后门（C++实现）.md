@@ -17,9 +17,13 @@ tag: 工具开发
 ![](/imag/20190709/1.png)
 
 HTTP Server API 运行在用户模式中，也就是说任意用户都可以调用该API实现一个HttpListener，与 IIS 共享端口，但是前提是你必须拥有管理员权限。
+
 上图整个过程描述如下：
+
 （1）第一步，IIS 或者是自己写的程序（HttpListener）调用API ，向内核态的Http.sys注册一个URL前缀，这相当于向路由器添加一条路由规则，Http.sys就是这个路由器。MSDN示例：https://docs.microsoft.com/zh-cn/windows/win32/http/urlprefix-strings
+
 （2）第二步，Http.sys捕获到一个http请求，它将会根据自身的“路由表”找到该http请求的前缀所对应的应用，然后把请求分发给该应用。
+
 （3）第三步，HttpListener接收到Http.sys转发来的请求，对其进行回应。
 
 ### 0x03 后门功能设计
