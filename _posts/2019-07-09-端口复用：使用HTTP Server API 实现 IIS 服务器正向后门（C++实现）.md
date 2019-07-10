@@ -31,13 +31,18 @@ HTTP Server API 运行在用户模式中，也就是说任意用户都可以调�
 微软官方有一个基于HTTP Server API 1.0版本的demo：[点此](https://docs.microsoft.com/zh-cn/windows/win32/http/http-server-sample-application)
 本文基于该demo进行修改，设计一个功能较简单的后门，实现对http请求也就是80端口的共享，该api同时支持https协议，在此不作演示。
 
-功能需求：
+功能设计：
 1. 与 IIS 共享80端口
 2. 对传来的http请求进行身份验证，验证成功时进行回应
 3. 命令执行
 4. 流量加密
 
-### 0x04 后门实现及关键代码讲解
+### 0x04 效果演示
 
+环境：Windows server 2008 R2 + IIS7
+
+![](/imag/20190709/1.gif)
+
+### 0x05 后门实现及关键代码讲解
 
 
