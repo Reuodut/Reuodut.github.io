@@ -41,7 +41,7 @@ HTTP Server API 运行在用户模式中，也就是说任意用户都可以调�
 
 环境：Windows server 2008 R2 + IIS7
 
-![](/imag/20190709/2.gif)
+![](/imag/20190709/12.gif)
 
 ### 0x05 后门实现及关键代码讲解
 
