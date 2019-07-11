@@ -41,6 +41,8 @@ HTTP Server API 运行在用户模式中，也就是说任意用户都可以调�
 
 环境：Windows server 2008 R2 + IIS7
 
+可以看到，未注册/test/前缀时，因为此时只有iis使用了端口共享机制，http.sys把访问/test/的请求交给了iis，iis返回了404；随后我们用自己的程序把/test/前缀注册到http.sys，此时访问/test/,http.sys于是把请求交了我们的后门程序。
+
 ![](/imag/20190709/12.gif)
 
 ### 0x05 后门实现及关键代码讲解
