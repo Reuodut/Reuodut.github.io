@@ -114,8 +114,8 @@ NF_STOP表示报文通过了某个钩子函数的处理，后面的钩子函数�
         return NF_ACCEPT;
     }
 
-### 完整代码：
-
+### 完整Demo：
+以下代码接管了所有tcp流量并return NF_STOP，读者可以参考添加更多过滤规则 比如过滤特定端口 或者特定ip等等
 filter_tcp.c
 
     #include <linux/module.h>
